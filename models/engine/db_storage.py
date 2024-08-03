@@ -51,7 +51,7 @@ class DBStorage:
                     new_dict[key] = obj
         return (new_dict)
     
-     def get(self, cls, id):
+    def get(self, cls, id):
         """retrieves an object of a class with id"""
         obj = None
         if cls is not None and issubclass(cls, BaseModel):

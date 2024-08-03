@@ -34,7 +34,7 @@ class FileStorage:
             return new_dict
         return self.__objects
     
-     def get(self, cls, id):
+    def get(self, cls, id):
         """Retrieves an object of a class with id"""
         obj = None
         if cls is not None and issubclass(cls, BaseModel):
